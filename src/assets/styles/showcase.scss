@@ -1,0 +1,88 @@
+.lab {
+  margin: 5rem 2rem;
+  display: inline-block;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    li {
+      display: list-item;
+      text-align: -webkit-match-parent;
+      height: 220px;
+      width: 220px;
+      background-color: #f5f5f5;
+      box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+.lab ul li:hover {
+  background-color: #606161;
+  opacity: 0.4;
+  -webkit-animation: showcase-pop-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: showcase-pop-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes showcase-pop-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+      0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes tshowcase-pop-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+      0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.img-responsive {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.lt {
+  width: 150px;
+  margin: 1.8rem 0rem;
+}
+.gap {
+  height: 100px;
+  margin: 3.2rem 0rem;
+}
+.amp {
+  width: 125px;
+  margin: 2.5rem 0rem;
+}
+
+.text {
+  position: absolute;
+  text-align: left;
+  h4,
+  p {
+    margin: 0px;
+  }
+}
