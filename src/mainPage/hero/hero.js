@@ -9,8 +9,8 @@ const Hero = () => {
         <span>Jessica</span>
       </h1>
       <div className="sub-title">
-        Software Engineer based in San Francisco.
-        <br /> Obsessed with: user experience, optimization, and CSS
+        I am a Software Engineer based in San Francisco, CA.
+        <br /> I am Obsessed with user experience, optimization, and CSS.
       </div>
     </div>
   );

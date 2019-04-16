@@ -2,12 +2,16 @@ import React, { Component } from "react";
 
 const NavBar = () => {
   return (
-    <header role="banner">
-      <h1>Jessica Lair</h1>
+    <header role="banner" className="nav-bar">
+      <div className="name">
+        <a href="/">
+          <h1>Jessica Lair</h1>
+        </a>
+      </div>
       <nav role="navigation">
         <ul>
           <li>
-            <a href="/">Lab</a>
+            <a href="/lab">Lab</a>
           </li>
           <li>
             <a href="/about">About Me</a>

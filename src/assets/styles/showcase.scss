@@ -1,19 +1,33 @@
 .lab {
   margin: 5rem 2rem;
   display: inline-block;
+  @media (max-width: 768px) {
+    margin: 5rem 0rem;
+  }
   ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
     li {
       display: list-item;
       text-align: -webkit-match-parent;
       height: 220px;
       width: 220px;
       background-color: #f5f5f5;
-      box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+      @media (max-width: 500px) {
+        height: 125px;
+        width: 125px;
+      }
     }
   }
+}
+.lab ul li .hover-text {
+  display: none;
 }
 .lab ul li:hover {
   background-color: #606161;
@@ -21,6 +35,10 @@
   -webkit-animation: showcase-pop-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: showcase-pop-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.lab ul li:hover .hover-text {
+  display: inherit;
 }
 
 @-webkit-keyframes showcase-pop-up {
@@ -68,14 +86,26 @@
 .lt {
   width: 150px;
   margin: 1.8rem 0rem;
+  @media (max-width: 500px) {
+    width: 75px;
+    margin: 1.5rem;
+  }
 }
 .gap {
   height: 100px;
   margin: 3.2rem 0rem;
+  @media (max-width: 500px) {
+    width: 75px;
+    margin: 0.7rem 0rem;
+  }
 }
 .amp {
   width: 125px;
   margin: 2.5rem 0rem;
+  @media (max-width: 500px) {
+    width: 75px;
+    margin: 1.5rem;
+  }
 }
 
 .text {
@@ -84,5 +114,39 @@
   h4,
   p {
     margin: 0px;
+  }
+}
+
+//*LendingTree Page **/
+.tabs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5rem 2rem;
+  grid-gap: 2rem;
+}
+.tab-list {
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.tab-list-active {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+.tab-content .img-responsive {
+  width: 500px;
+}
+.about-project {
+  text-align: left;
+  ul li {
+    padding-bottom: 1rem;
   }
 }

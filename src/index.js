@@ -6,6 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 /*styles */
 import "./assets/styles/index.scss";
 import "./assets/styles/showcase.scss";
+import "./assets/styles/aboutMe.scss";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
