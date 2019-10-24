@@ -1,4 +1,5 @@
-.lab {
+.lab,
+.css-lab {
   margin: 5rem 2rem;
   display: inline-block;
   @media (max-width: 768px) {
@@ -20,25 +21,40 @@
       background-color: #f5f5f5;
       box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
       @media (max-width: 500px) {
-        height: 125px;
-        width: 125px;
+        height: 130px;
+        width: 130px;
       }
     }
   }
 }
-.lab ul li .hover-text {
-  display: none;
+.css-lab ul {
+  margin-top: 5rem;
 }
-.lab ul li:hover {
+.lab ul li:hover,
+.css-lab ul li:hover {
   background-color: #606161;
   opacity: 0.4;
-  -webkit-animation: showcase-pop-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: showcase-pop-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.lab ul li span {
+  visibility: hidden;
+  position: absolute;
+  text-align: left;
+  display: inline;
+  background: #fff;
+  -webkit-box-shadow: -10px 0 0 0 #fff, 10px 0 0 0 #fff;
+  -moz-box-shadow: -10px 0 0 0 #fff, 10px 0 0 0 #fff;
+  -ms-box-shadow: -10px 0 0 0 #fff, 10px 0 0 0 #fff;
+  box-shadow: -10px 0 0 0 #fff, 10px 0 0 0 #fff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  line-height: 1.7;
+  margin-top: 4rem;
+  color: #1e4147;
+  font-size: 17px;
 }
 
-.lab ul li:hover .hover-text {
-  display: inherit;
+.lab ul li:hover span {
+  visibility: visible;
 }
 
 @-webkit-keyframes showcase-pop-up {
@@ -148,5 +164,13 @@
   text-align: left;
   ul li {
     padding-bottom: 1rem;
+  }
+}
+
+.keyboard {
+  width: 100px;
+  margin: 3rem 0rem;
+  @media (max-width: 500px) {
+    margin: 0rem;
   }
 }
