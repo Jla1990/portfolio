@@ -9,6 +9,10 @@ import "./assets/styles/showcase.scss";
 import "./assets/styles/aboutMe.scss";
 import "./assets/styles/cssLab.scss";
 
+/* css lab styles */
+import "./lab/CssLab/loader/main.css";
+
+
 ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change

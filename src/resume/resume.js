@@ -1,8 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+
 
 class Resume extends Component {
   render() {
-    return <div>This is for my resume </div>;
+    return (
+      <div className="resume">
+        <iframe src="https://drive.google.com/file/d/16WxB_uDV0ptkLUpXLJSZOUUMNsIXrInv/preview" className="responsive-iframe"></iframe>
+      </div>
+    );
   }
 }
 

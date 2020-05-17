@@ -49,6 +49,9 @@ header.aboutMeee {
       font-weight: 700;
       line-height: 1.2;
       align-self: end;
+      @media(max-width: 500px) {
+        grid-row: 3 / span 1;
+      }
     }
     .background-content {
       grid-column: 3 / 6;
@@ -98,6 +101,7 @@ header.aboutMeee {
       }
     }
     @media (max-width: 500px) {
+      padding-top: 2rem;
       .header-wrapper {
         width: 100%;
         grid-template-columns: auto 1fr 1fr 1fr 0.5fr;
@@ -127,6 +131,9 @@ header.aboutMeee {
         width: 85%;
         text-align: left;
       }
+      .background-content {
+        grid-column: 1 / 6;
+      }
     }
     @media (max-width: 480px) {
       header.aboutMeee .background-content {
@@ -147,7 +154,7 @@ header.aboutMeee {
 }
 
 .image {
-  background-image: url("../pictures/me.JPG");
+  background-image: url("../pictures/me1.JPG");
   background-repeat: no-repeat;
   width: 400px;
   height: 400px;

@@ -8,7 +8,19 @@ class CssLab extends Component {
           <h1>Experiments with CSS and Javascript </h1>
 
           <ul>
-            <li>1</li>
+            <li>
+              <a href="/lab/css-loader">
+            <div className="placeholder">
+                <span>
+                  CSS
+                  <br />
+                  Loader
+                </span>
+
+                <img src="" className="img-responsive lt" />
+              </div>
+              </a>
+            </li>
             <li>2</li>
             <li>3</li>
             <li>4</li>

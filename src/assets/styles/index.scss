@@ -4,6 +4,7 @@
 //** all styles **
 * {
   box-sizing: border-box;
+  color: #333;
 }
 html {
   font-family: "Karla", sans-serif;
@@ -11,10 +12,12 @@ html {
   text-rendering: optimizeLegibility;
   font-kerning: normal;
   text-size-adjust: 100%;
+  color: #333;
 }
 body {
   text-align: center;
   margin: 0px;
+  color: #333;
 }
 h1 {
   line-height: 1.2;
@@ -92,6 +95,7 @@ header.nav-bar {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid black;
+  color: #333;
   h1 {
     text-transform: uppercase;
     grid-row: 2 / 3;

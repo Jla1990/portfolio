@@ -30,12 +30,13 @@ const AboutMe = () => {
             my mind.
             <br />
             <br />
-            When I am not coding, I am usually doing some type of outdoor
-            activity. I am a minimalist runner, tea enthusiast, and professional
-            explorer.
+            I am a creator by heart. This gives me the drive and motivation to take a complex issue and define a clear and thoughtful solution in order to move forward. I chose to teach myself how to code and move to San Francisco from North Carolina because I truly believe that technology has the opportunity to bring us closer together as a universal family. I believe that a renewed universal focus on positive social impact will facilitate the cycle of long-term success for our communities.
             <br />
             <br />
-            Want to know more about me? Follow me on any of my social medias!
+I love to learn, implement and give back to my community, and have a strong interest in building consumer facing applications that change people's lives.
+<br />
+            <br />
+Please reach out if you would like to connect! 
           </p>
           <div className="education">
             <ul>

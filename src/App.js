@@ -8,6 +8,10 @@ import ContactMe from "./contact/contactMe";
 import Resume from "./resume/resume";
 import LendingTree from "./lab/lendingTree";
 
+
+//css labs
+import CssLoader from "./lab/CssLab/loader/cssLoader";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
@@ -21,6 +25,8 @@ class App extends Component {
           <Route exact path="/about" component={AboutMe} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/lendingTree" component={LendingTree} />
+          <Route exact path="/lab/css-loader" component={CssLoader} />
+          
           <Route
             exact
             path="/"
