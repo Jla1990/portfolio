@@ -1,138 +1,85 @@
-body {
-  background: #1d1f20;
+.meltaway {
+	background: #1d1f20;
+	height: 100vh;
 }
 
 #position {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  margin: auto;
-  transform: rotateZ(15deg)
+	width: 400px;
+	height: 400px;
+	position: relative;
+	margin: auto;
+	transform: rotateZ(15deg)
 }
 
 .surrounding-ring {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(24, 19, 25, 0) 0%,
-    rgba(248, 144, 9, 0) 34%,
-    rgba(248, 144, 9, 0) 36%,
-    rgba(248, 144, 9, 0) 37%,
-    rgba(248, 144, 9, 0) 38%,
-    rgba(248, 144, 9, 0) 39%,
-    rgba(248, 144, 9, 0) 40%,
-    rgba(248, 144, 9, 0) 41%,
-    rgba(248, 144, 9, 0) 42%,
-    rgba(248, 144, 9, 0) 44%,
-    rgba(248, 144, 9, 0) 46%,
-    rgba(248, 144, 9, 0) 48%,
-    rgba(248, 144, 9, 0) 49%,
-    rgba(248, 144, 9, 0) 51%,
-    rgba(248, 144, 9, 0) 52%,
-    rgba(33, 213, 177, .3) 53%,
-    rgba(33, 213, 177, .6) 54%,
-    rgba(33, 213, 177, 1) 55%,
-    rgba(33, 213, 177, .8) 56%,
-    rgba(33, 213, 177, .6) 58%,
-    rgba(33, 213, 177, .4) 60%,
-    rgba(33, 213, 177, .2) 61%,
-    rgba(33, 213, 177, .1) 62%,
-    rgba(248, 144, 9, 0) 63%,
-    #192322 65%,
-    rgba(33, 213, 177, .5) 67%,
-    rgba(33, 213, 177, .8) 68%,
-    rgba(30, 213, 177, 1) 69%,
-    rgba(171, 240, 225, .4) 70%,
-    rgba(78, 73, 76, 0) 71%,
-    rgba(77, 72, 76, 0) 72%,
-    rgba(248, 144, 9, 0) 100%
-  );
-  transform: rotateX(75deg);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: -webkit-radial-gradient( center, ellipse cover, rgba(24, 19, 25, 0) 0%, rgba(248, 144, 9, 0) 34%, rgba(248, 144, 9, 0) 36%, rgba(248, 144, 9, 0) 37%, rgba(248, 144, 9, 0) 38%, rgba(248, 144, 9, 0) 39%, rgba(248, 144, 9, 0) 40%, rgba(248, 144, 9, 0) 41%, rgba(248, 144, 9, 0) 42%, rgba(248, 144, 9, 0) 44%, rgba(248, 144, 9, 0) 46%, rgba(248, 144, 9, 0) 48%, rgba(248, 144, 9, 0) 49%, rgba(248, 144, 9, 0) 51%, rgba(248, 144, 9, 0) 52%, rgba(33, 213, 177, .3) 53%, rgba(33, 213, 177, .6) 54%, rgba(33, 213, 177, 1) 55%, rgba(33, 213, 177, .8) 56%, rgba(33, 213, 177, .6) 58%, rgba(33, 213, 177, .4) 60%, rgba(33, 213, 177, .2) 61%, rgba(33, 213, 177, .1) 62%, rgba(248, 144, 9, 0) 63%, #192322 65%, rgba(33, 213, 177, .5) 67%, rgba(33, 213, 177, .8) 68%, rgba(30, 213, 177, 1) 69%, rgba(171, 240, 225, .4) 70%, rgba(78, 73, 76, 0) 71%, rgba(77, 72, 76, 0) 72%, rgba(248, 144, 9, 0) 100%);
+	transform: rotateX(75deg);
 }
 
 .circle {
-  width: 180px;
-  height: 180px;
-  position: absolute;
-  top: 110px;
-  left: 110px;
-  border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	top: 110px;
+	left: 110px;
+	border-radius: 50%;
 }
- /* this allows the front of the ring to display in the front */
+
+
+/* this allows the front of the ring to display in the front */
+
 .top {
-  clip: rect(0px, 180px, 90px, 0px);
+	clip: rect(0px, 180px, 90px, 0px);
 }
+
 
 /*this positions the top and bottom portion of the circle to be viewed upright */
+
 .circle.bottom.planet-bg,
 .circle.top.planet-bg {
-    transform: rotateZ(-15deg)
+	transform: rotateZ(-15deg)
 }
+
 .planet-bg {
-  background: -moz-radial-gradient(
-      top,
-      circle cover,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
+	background: -moz-radial-gradient( top, circle cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%), -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba( 0, 0, 0, 0) 62%), -moz-linear-gradient(bottom, hsl(198, 68%, 66%) 0%, hsl(198, 68%, 66%) 3%, hsl(198, 68%, 66%) 5%, hsl(198, 68%, 66%) 9%, hsl(198, 68%, 66%) 20%, hsl(198, 68%, 66%) 32%, hsl(339, 98%, 55%) 45%, hsl(339, 98%, 55%) 47%, hsl(325, 95%, 55%) 48%, hsl(330, 95%, 55%) 49%, hsl(335, 95%, 55%) 51%, hsl(339, 98%, 55%) 59%, hsl(34, 95%, 55%) 61%, hsl(31, 95%, 55%) 63%, hsl(31, 95%, 55%) 64%, hsl(25, 95%, 55%) 68%, hsl(31, 95%, 55%) 74%, hsl(50, 93%, 55%) 78%, hsl(45, 93%, 55%) 83%, hsl(40, 93%, 55%) 85%, hsl(45, 93%, 55%) 90%, hsl(50, 93%, 55%) 100%);
 
-    -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(
-            0,
-            0,
-            0,
-            0
-          )
-          62%),
-    -moz-linear-gradient(bottom, hsl(198, 68%, 66%) 0%, hsl(198, 68%, 66%)
-          3%, hsl(198, 68%, 66%) 5%, hsl(198, 68%, 66%) 9%, hsl(198, 68%, 66%)
-          20%, hsl(198, 68%, 66%) 32%, hsl(339, 98%, 55%) 45%, hsl(339, 98%, 55%)
-          47%, hsl(325, 95%, 55%) 48%, hsl(330, 95%, 55%) 49%, hsl(335, 95%, 55%)
-          51%, hsl(339, 98%, 55%) 59%, hsl(34, 95%, 55%) 61%, hsl(31, 95%, 55%)
-          63%, hsl(31, 95%, 55%) 64%, hsl(25, 95%, 55%) 68%, hsl(31, 95%, 55%)
-          74%, hsl(50, 93%, 55%) 78%, hsl(45, 93%, 55%) 83%, hsl(40, 93%, 55%)
-          85%, hsl(45, 93%, 55%) 90%, hsl(50, 93%, 55%) 100%);
-  background: -webkit-radial-gradient(
-      top,
-      circle cover,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-
-    -webkit-linear-gradient(bottom, hsl(198, 68%, 66%) 0%, hsl(198, 68%, 66%)
-          3%, hsl(198, 68%, 66%) 5%, hsl(198, 68%, 66%) 9%, hsl(198, 68%, 66%)
-          20%, hsl(198, 68%, 66%) 32%, hsl(339, 98%, 55%) 45%, hsl(339, 98%, 55%)
-          47%, hsl(325, 95%, 55%) 48%, hsl(330, 95%, 55%) 49%, hsl(335, 95%, 55%)
-          51%, hsl(339, 98%, 55%) 59%, hsl(34, 95%, 55%) 61%, hsl(31, 95%, 55%)
-          63%, hsl(31, 95%, 55%) 64%, hsl(25, 95%, 55%) 68%, hsl(31, 95%, 55%)
-          74%, hsl(50, 93%, 55%) 78%, hsl(45, 93%, 55%) 83%, hsl(40, 93%, 55%)
-          85%, hsl(45, 93%, 55%) 90%, hsl(50, 93%, 55%) 100%);
-);
-}
+	background: -webkit-radial-gradient( top, circle cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%), -webkit-linear-gradient(bottom, hsl(198, 68%, 66%) 0%, hsl(198, 68%, 66%) 3%, hsl(198, 68%, 66%) 5%, hsl(198, 68%, 66%) 9%, hsl(198, 68%, 66%) 20%, hsl(198, 68%, 66%) 32%, hsl(339, 98%, 55%) 45%, hsl(339, 98%, 55%) 47%, hsl(325, 95%, 55%) 48%, hsl(330, 95%, 55%) 49%, hsl(335, 95%, 55%) 51%, hsl(339, 98%, 55%) 59%, hsl(34, 95%, 55%) 61%, hsl(31, 95%, 55%) 63%, hsl(31, 95%, 55%) 64%, hsl(25, 95%, 55%) 68%, hsl(31, 95%, 55%) 74%, hsl(50, 93%, 55%) 78%, hsl(45, 93%, 55%) 83%, hsl(40, 93%, 55%) 85%, hsl(45, 93%, 55%) 90%, hsl(50, 93%, 55%) 100%);
+	
+};
 
 .line1,
 .line2,
 .line3 {
-  position: absolute;
-  border-style: solid;
-  border-width: 8px 2px 0px 2px;
-  width: 300px;
-  border-color: #1d1f20;
+	position: absolute;
+	border-style: solid;
+	border-width: 8px 2px 0px 2px;
+	width: 300px;
+	border-color: #1d1f20;
 }
 
 .line1 {
-  top: 20%;
+	top: 20%;
 }
 
 .line2 {
-  top: 40%;
+	top: 40%;
 }
 
 .line3 {
-    top: 60%;
+	top: 60%;
 }
 
-
+.inspiration {
+	width: 50%;
+	margin: 0 auto;
+	color: #fff !important;
+	text-align: left;
+}
+@media(max-width: 500px) {
+	.inspiration {
+		width: 90%;
+	}
+}

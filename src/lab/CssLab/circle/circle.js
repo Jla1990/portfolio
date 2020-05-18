@@ -1,10 +1,8 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-  </head>
-  <body>
+import React from "react";
+
+const Circle = () => {
+  return (
+    <div className="circle-container">
     <div id="outie">
       <div id="innie"></div>
       <div id="uno"></div>
@@ -28,5 +26,9 @@
       </div>
     </div>
     <div id="outer2"></div>
-  </body>
-</html>
+    </div>
+  );
+};
+
+export default Circle;
+

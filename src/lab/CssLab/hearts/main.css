@@ -1,9 +1,10 @@
-body {
+.parent {
   background: linear-gradient(-45deg, #ddd6f3, #e6cac9, #ee7752, #e73c7e);
   background-size: 400% 400%;
   -webkit-animation: GradientBackground 15s ease infinite;
   -moz-animation: GradientBackground 15s ease infinite;
   animation: GradientBackground 15s ease infinite;
+  overflow: hidden;
 }
 @keyframes GradientBackground {
   0% {

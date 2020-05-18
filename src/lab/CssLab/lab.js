@@ -1,36 +1,65 @@
 import React, { Component } from "react";
+//images
+import loader from'../../assets/pictures/lab/loader.png';
+import heart from '../../assets/pictures/lab/heart.png';
+import circle from '../../assets/pictures/lab/circle.png';
+import meltaway from '../../assets/pictures/lab/meltaway.png';
 
 class CssLab extends Component {
   render() {
     return (
-      <div>
-        <div className="css-lab">
-          <h1>Experiments with CSS and Javascript </h1>
 
-          <ul>
+<div className="lab">
+  <h1> Experiments with Css</h1>
+<ul>
             <li>
               <a href="/lab/css-loader">
             <div className="placeholder">
                 <span>
                   CSS
-                  <br />
                   Loader
                 </span>
 
-                <img src="" className="img-responsive lt" />
+                <img src={loader} className="img-responsive lab-css" />
               </div>
               </a>
             </li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
+            <li>
+              <a href="/lab/hearts">
+            <div className="placeholder">
+                <span>
+                  CSS
+                  Hearts
+                </span>
+                <img src={heart} className="img-responsive lab-css" />
+              </div>
+              </a>
+            </li>
+            <li>
+              <a href="/lab/circle">
+            <div className="placeholder">
+                <span>
+                  CSS
+                  Circle <br/>
+                  Transition
+                </span>
+                <img src={circle} className="img-responsive lab-css" />
+              </div>
+              </a>
+            </li>
+            <li>
+              <a href="/lab/meltaway">
+            <div className="placeholder">
+                <span>
+                  CSS
+                  Meltaway 
+                </span>
+                <img src={meltaway} className="img-responsive lab-css" />
+              </div>
+              </a>
+            </li>
+           
           </ul>
-        </div>
       </div>
     );
   }

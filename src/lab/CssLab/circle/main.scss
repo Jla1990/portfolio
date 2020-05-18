@@ -1,10 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  overflow: hidden;
-}
+
 div#reload {
   position: fixed;
   top: 10px;
@@ -207,7 +201,7 @@ div#text-logo {
 }
 #phase-1 {
   width: 100vw;
-  height: 50vh;
+  height: 38vh;
   position: relative;
   overflow: hidden;
 }
@@ -321,7 +315,7 @@ div#logo2-outer {
     top: 0%;
   }
 }
-#outer2 {
+/* #outer2 {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -333,7 +327,7 @@ div#logo2-outer {
   box-shadow: 0px 0px 10px 2px rgb(163, 157, 157);
   animation: appr 2s ease 7s 1;
   animation-fill-mode: forwards;
-}
+} */
 @keyframes appr {
   100% {
     opacity: 1;

@@ -2,8 +2,8 @@ import React from "react";
 
 const CssLoader = () => {
   return (
-    <div class="page-wrapper">
-        <div class="bubble"></div>
+    <div className="page-wrapper">
+        <div className="bubble"></div>
     </div>
   );
 };

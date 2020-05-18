@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import LT from "../assets/pictures/Lendingtree/lendingtreeLogo.png";
-import Gap from "../assets/pictures/Gap/gapLogo.svg";
-import Amp from "../assets/pictures/Lendingtree/ampproject-official.svg";
-import Keyboard from "../assets/pictures/keyboard.png";
+import LT from "../../assets/pictures/Lendingtree/lendingtreeLogo.png";
+import Gap from "../../assets/pictures/Gap/gapLogo.svg";
+import Amp from "../../assets/pictures/Lendingtree/ampproject-official.svg";
+import Keyboard from "../../assets/pictures/keyboard.png";
+import TB from "../../assets/pictures/TB/TB.png";
 
 class Showcase extends Component {
   render() {
@@ -10,7 +11,7 @@ class Showcase extends Component {
       <div className="lab">
         <ul>
           <li>
-            <a href="/lendingtree">
+            
               <div className="placeholder">
                 <span>
                   LendingTree
@@ -20,7 +21,7 @@ class Showcase extends Component {
 
                 <img src={LT} className="img-responsive lt" />
               </div>
-            </a>
+            
           </li>
           <li>
             <div className="placeholder">
@@ -45,9 +46,16 @@ class Showcase extends Component {
             </div>
           </li>
           <li>
-            <div className="placeholder" />
-            <span>Coming Soon</span>
-            <img src={Keyboard} className="img-responsive keyboard" />
+            <div className="placeholder">
+              <span>
+                True Botanicals
+                <br />
+                Optimization
+                <br />
+                & Shopify
+              </span>
+              <img src={TB} className="img-responsive TB" />
+            </div>
           </li>
           <li>
             <div className="placeholder" />
