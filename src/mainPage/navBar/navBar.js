@@ -2,18 +2,22 @@ import React, { Component } from "react";
 
 const NavBar = () => {
   return (
-    <header role="banner">
-      <h1>Jessica Lair</h1>
+    <header role="banner" className="nav-bar">
+      <div className="name">
+        <a href="/">
+          <h1>Jessica Lair</h1>
+        </a>
+      </div>
       <nav role="navigation">
         <ul>
           <li>
-            <a href="/">Lab</a>
+            <a href="/lab">Lab</a>
           </li>
           <li>
             <a href="/about">About Me</a>
           </li>
           <li>
-            <a href="/resume">Resume</a>
+            <a href="https://drive.google.com/file/d/16WxB_uDV0ptkLUpXLJSZOUUMNsIXrInv/view?usp=sharing" target="_blank">Resume</a>
           </li>
           <li>
             <a href="/contact">Contact</a>

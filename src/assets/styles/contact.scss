@@ -1,0 +1,45 @@
+.contact {
+    main {
+      @media(min-width:1441px) {
+        width: 50%;
+        margin: 0 auto;
+      }
+      width: 70%;
+      margin: 0 auto;
+      @media(max-width: 767px) {
+        width: 80%;
+      }
+    }
+    h1 {
+      font-family: 'Sanchez Slab W03', Courier, serif;
+      font-weight: normal;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      float: left;
+      -webkit-shape-outside: polygon(nonzero, -58px 80.7%, 76.05% -70px, 94.55% -23.3%, -26.05% 200%);
+      shape-outside: polygon(nonzero, -58px 80.7%, 76.05% -70px, 94.55% -23.3%, -26.05% 200%);
+      padding-bottom: 50px;
+      text-transform: uppercase;
+      font-size: 2em;
+       @media(max-width: 767px) {
+        padding-bottom: 100px;
+        font-size: 3vh;
+        -webkit-shape-outside: polygon(nonzero, -58px 80.7%, 76.05% -70px, 94.55% -23.3%, -26.05% 92%);
+      shape-outside: polygon(nonzero, -58px 80.7%, 76.05% -70px, 94.55% -23.3%, -26.05% 92%);
+      }
+      
+  }
+  section {
+    margin: 100px 0;
+    @media(max-width: 767px) {
+     margin: 50px 0px;
+    }
+  }
+  p, a{
+      text-align: left;
+    @media(max-width: 767px) {
+      margin: 0px;
+      font-size: 12px;
+    }
+  }
+  }

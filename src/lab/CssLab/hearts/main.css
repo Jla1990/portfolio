@@ -1,0 +1,115 @@
+.parent {
+  background: linear-gradient(-45deg, #ddd6f3, #e6cac9, #ee7752, #e73c7e);
+  background-size: 400% 400%;
+  -webkit-animation: GradientBackground 15s ease infinite;
+  -moz-animation: GradientBackground 15s ease infinite;
+  animation: GradientBackground 15s ease infinite;
+  overflow: hidden;
+}
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.heart-container {
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 99vh;
+  background-color: #fff;
+}
+.heart-shape {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #ff0099;
+  background: -webkit-linear-gradient(to bottom, #493240, #ff0099);
+  background: linear-gradient(to bottom, #493240, #ff0099);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  animation: heartbeat 2.5s infinite;
+}
+
+.heart-shape:before {
+  position: absolute;
+  bottom: 0px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  content: "";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #ff0099;
+  background: -webkit-linear-gradient(to bottom, #493240, #ff0099);
+  background: linear-gradient(to bottom, #493240, #ff0099);
+}
+.heart-shape:after {
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  width: 200px;
+  height: 200px;
+  content: "";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #ff0099;
+  background: -webkit-linear-gradient(to bottom, #493240 50%, #ff0099 148%);
+  background: linear-gradient(to bottom, #493240 50%, #ff0099 148%);
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 2px 0px 2px;
+  width: 300px;
+  border-color: #fff;
+  transform: rotate(-45deg);
+}
+.line-1 {
+  top: 96%;
+}
+.line-2 {
+  top: 76%;
+}
+
+.line-3 {
+  top: 56%;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}

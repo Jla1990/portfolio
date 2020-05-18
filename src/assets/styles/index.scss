@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Londrina+Shadow");
+@import url("https://fonts.googleapis.com/css?family=Karla");
+
 //** all styles **
 * {
   box-sizing: border-box;
+  color: #333;
 }
 html {
-  font-family: helvetica, san-serif;
+  font-family: "Karla", sans-serif;
   line-height: 1.3em;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
   text-size-adjust: 100%;
+  color: #333;
 }
 body {
   text-align: center;
   margin: 0px;
+  color: #333;
 }
 h1 {
   line-height: 1.2;
@@ -27,15 +32,24 @@ li {
   margin: 0;
   padding: 0;
 }
-header {
-  width: 90%;
-  margin: 2rem;
+header.nav-bar {
+  padding: 2rem;
   text-transform: uppercase;
+  border-bottom: 1px solid black;
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
   h1 {
     margin: 0 0 0.5em;
-    font-size: 1rem;
+    font-size: 32px;
+    @media (max-width: 500px) {
+      font-size: 24px;
+    }
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
   }
-  @media (min-width: 500px) {
+  @media (min-width: 501px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -44,16 +58,14 @@ header {
     }
   }
 
-  @media (max-width: 500px) {
-    h1 {
-      display: none;
-    }
-  }
-
   nav ul {
     display: flex;
     margin-bottom: 4px;
     justify-content: space-between;
+    font-size: 20px;
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
   }
   @media (min-width: 300px) {
     nav li {
@@ -78,21 +90,21 @@ header {
 //* its me section **/
 .hero {
   display: grid;
-  @media (max-width: 880px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 0px;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid black;
   border-bottom: 1px solid black;
+  color: #333;
   h1 {
     text-transform: uppercase;
     grid-row: 2 / 3;
     font-size: calc(2.2rem + 3vw);
     margin-left: 1rem;
     margin-right: 1rem;
+    @media (max-width: 500px) {
+      margin: 0rem 2rem;
+    }
   }
   h2 {
     text-transform: uppercase;
@@ -116,7 +128,6 @@ header {
 .hero h1 {
   display: grid;
   justify-content: start;
-  // -webkit-animation: colorchange 20s infinite alternate;
 }
 h1 {
   font-size: 8rem;
@@ -125,32 +136,6 @@ h1 {
   margin: 0px;
   text-align: left;
 }
-
-// @-webkit-keyframes colorchange {
-//   0% {
-//     color: #022b3a;
-//   }
-
-//   20% {
-//     color: #f87060;
-//   }
-
-//   40% {
-//     color: #c2ee1f;
-//   }
-
-//   50% {
-//     color: #d35400;
-//   }
-
-//   80% {
-//     color: #ffbe68;
-//   }
-
-//   100% {
-//     color: #cdd7d6;
-//   }
-// }
 
 .hero h1 span {
   display: block;
@@ -178,11 +163,15 @@ h1 {
 }
 
 .sub-title {
-  font-family: helvetica, san-serif;
+  font-family: "Karla", sans-serif;
   text-align: left;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   grid-row: 3 / 3;
+  @media (max-width: 500px) {
+    margin: 1rem 2rem 0rem 2rem;
+    font-size: 12px;
+  }
 }
 
 //*bounce in animation
@@ -292,52 +281,5 @@ h1 {
     transform: translateY(0);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-  }
-}
-
-//*about me **/
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 4rem 2rem;
-}
-.aboutMe {
-  grid-column: 2;
-  -ms-flex-item-align: center;
-  align-self: center;
-  width: 66%;
-  justify-self: center;
-  line-height: 1.5;
-  margin: 0;
-  text-align: left;
-}
-.image {
-  background-image: url("../pictures/me.JPG");
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 400px;
-  background-size: cover;
-  grid-column: 1;
-}
-
-/** image animationn **/
-.image-pan {
-  -webkit-animation: image-pan 10s both;
-  animation: image-pan 10s both;
-}
-@-webkit-keyframes image-pan {
-  0% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
-}
-@keyframes image-pan {
-  0% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 100% 0%;
   }
 }
