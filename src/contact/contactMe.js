@@ -12,7 +12,7 @@ class ContactMe extends Component {
     <p>Let's get in touch! <br/>
     <b>Email: </b> <a href="mailto: jessica.lair@hotmail.com">Jessica.Lair@hotmail.com</a><br/>
     <b>Github: </b> <a href="https://github.com/Jla1990" target="_blank">https://github.com/Jla1990</a> <br/>
-    <b>LinkedIn: </b> <a href="www.linkedin.com/in/jesslair" target="_blank">www.linkedin.com/in/jessla</a><br/>
+    <b>LinkedIn: </b> <a href="www.linkedin.com/in/jesslair" target="_blank">www.linkedin.com/in/jesslair</a><br/>
     </p>
   </section>
   
